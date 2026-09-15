@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# MediPredict AI - Local datasets and generated model artifacts
+# ============================================================
+
+# Raw datasets are kept local and must not be committed
+data/raw/**/*.csv
+data/raw/**/*.xlsx
+data/raw/**/*.xls
+
+# Generated processed datasets
+data/processed/**/*
+
+# Generated trained model binaries
+models/**/*.joblib
+models/**/*.pkl
+models/**/*.pickle
+

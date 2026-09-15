@@ -1,41 +1,35 @@
-from pathlib import Path
+﻿from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-# Project root directory
-ROOT_DIR = Path(__file__).resolve().parents[1]
-
-# Data directories
-DATA_DIR = ROOT_DIR / "data"
+DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
+PROCESSED_DATA_DIR = DATA_DIR / "processed"
 
-# Model and result directories
-MODEL_DIR = ROOT_DIR / "models"
-RESULTS_DIR = ROOT_DIR / "reports" / "results"
+MODEL_DIR = PROJECT_ROOT / "models"
+RESULTS_DIR = PROJECT_ROOT / "reports" / "results"
 
-
-# Supported diseases
-DISEASES = [
+DISEASES = (
     "diabetes",
     "heart",
     "ckd",
     "breast_cancer",
-]
+)
 
-
-# Candidate machine learning models
-MODEL_NAMES = [
+MODEL_NAMES = (
     "logistic_regression",
     "decision_tree",
     "random_forest",
     "svm",
     "knn",
     "xgboost",
-]
+)
 
+RANDOM_STATE = 42
 
-# Create required directories
 for disease in DISEASES:
     (RAW_DATA_DIR / disease).mkdir(parents=True, exist_ok=True)
     (MODEL_DIR / disease).mkdir(parents=True, exist_ok=True)
 
+PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
