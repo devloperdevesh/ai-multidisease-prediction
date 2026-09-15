@@ -138,35 +138,34 @@ No placeholder value will be presented as a final experimental result.
 
 The planned system follows a modular architecture:
 
-User
-|
-v
-Web Interface
-|
-v
-Flask Backend / Prediction API
-|
-+-----------------------+
-|                       |
-v                       v
-Input Validation     Disease Selection
-|                       |
-+-----------+-----------+
-            |
-            v
-Disease-Specific Preprocessor
-            |
-            v
-Selected Trained Model
-            |
-            v
-Prediction + Risk Probability
-            |
-            v
-Result Presentation
+```mermaid
+flowchart TD
+    A[User] --> B[Web Interface]
+    B --> C[Flask Backend / Prediction API]
+
+    C --> D{Disease Selection}
+    C --> E[Input Validation]
+
+    D --> F[Diabetes]
+    D --> G[Heart Disease]
+    D --> H[Chronic Kidney Disease]
+    D --> I[Breast Cancer]
+
+    E --> J[Disease-Specific Preprocessor]
+
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+
+    J --> K[Selected Trained ML Model]
+    K --> L[Prediction + Risk Probability]
+    L --> M[Result Presentation]
+
+    N[ML Training & Evaluation] --> K
+```
 
 The machine learning workflow is separated from the web application to support reproducibility, testing, maintenance, and future model replacement.
-
 ---
 
 ## 9. Technology Stack
@@ -280,43 +279,65 @@ Final machine learning performance will be added after the complete training and
 
 ## 13. Repository Structure
 
-ai-multidisease-prediction/
-|
-+-- app/
-|   +-- app.py
-|   +-- static/
-|   +-- templates/
-|
-+-- data/
-|   +-- raw/
-|   +-- processed/
-|
-+-- models/
-|   +-- diabetes/
-|   +-- heart/
-|   +-- ckd/
-|   +-- breast_cancer/
-|
-+-- reports/
-|   +-- results/
-|
-+-- src/
-|   +-- data/
-|   +-- models/
-|   +-- prediction/
-|   +-- training/
-|   +-- config.py
-|
-+-- tests/
-|
-+-- docs/
-|
-+-- requirements.txt
-+-- LICENSE
-+-- README.md
+The repository is organized into separate application, data, machine learning, testing, documentation, and reporting components.
+
+```mermaid
+flowchart TD
+    ROOT["ai-multidisease-prediction/"]
+
+    ROOT --> APP["app/"]
+    ROOT --> DATA["data/"]
+    ROOT --> MODELS["models/"]
+    ROOT --> REPORTS["reports/"]
+    ROOT --> SRC["src/"]
+    ROOT --> TESTS["tests/"]
+    ROOT --> DOCS["docs/"]
+    ROOT --> REQ["requirements.txt"]
+    ROOT --> LICENSE["LICENSE"]
+    ROOT --> README["README.md"]
+
+    APP --> APPPY["app.py"]
+    APP --> STATIC["static/"]
+    APP --> TEMPLATES["templates/"]
+
+    DATA --> RAW["raw/"]
+    DATA --> PROCESSED["processed/"]
+
+    MODELS --> DIAB["diabetes/"]
+    MODELS --> HEART["heart/"]
+    MODELS --> CKD["ckd/"]
+    MODELS --> BC["breast_cancer/"]
+
+    REPORTS --> RESULTS["results/"]
+
+    SRC --> SDATA["data/"]
+    SRC --> SMODELS["models/"]
+    SRC --> SPRED["prediction/"]
+    SRC --> STRAIN["training/"]
+    SRC --> CONFIG["config.py"]
+
+    DOCS --> LIT["01_literature_survey.md"]
+    DOCS --> HLD["02_hld.md"]
+    DOCS --> LLD["03_lld.md"]
+    DOCS --> DATA_DOC["04_dataset_documentation.md"]
+    DOCS --> TEST_DOC["06_test_cases.md"]
+
+    TESTS --> TFILES["Unit & Integration Tests"]
+```
+
+### Main Components
+
+| Directory | Purpose |
+|---|---|
+| `app/` | Flask web application and frontend assets |
+| `data/` | Raw and processed datasets |
+| `models/` | Disease-specific trained model artifacts |
+| `reports/` | Evaluation and research outputs |
+| `src/` | Core ML pipeline and prediction logic |
+| `tests/` | Automated testing |
+| `docs/` | Research and design documentation |
 
 ---
-
 ## 14. Reproducibility and Research Integrity
 
 The project follows a reproducible machine learning workflow.
