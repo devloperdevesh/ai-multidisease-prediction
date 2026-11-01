@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+
 from app.api.report_store import initialize, save_report, list_reports, delete_report
 
 from src.config import DISEASES
@@ -21,6 +22,7 @@ def create_app() -> Flask:
         if origin.strip()
     ]
     CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
+
     initialize()
 
     predictors = {

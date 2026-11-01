@@ -242,3 +242,4 @@ instance/
 .env
 .env.*
 !.env.example
+
