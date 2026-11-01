@@ -238,3 +238,7 @@ models/**/*.pickle
 # Local application database and instance data
 instance/
 
+.vercel
+.env
+.env.*
+!.env.example

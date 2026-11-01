@@ -1,4 +1,4 @@
-﻿{
+{
   "framework": "vite",
   "installCommand": "npm --prefix frontend install",
   "buildCommand": "npm --prefix frontend run build",
