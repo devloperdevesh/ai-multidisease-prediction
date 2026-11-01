@@ -1,0 +1,62 @@
+[
+  {
+    "disease": "diabetes",
+    "rows": 768,
+    "features": 8,
+    "accuracy_mean": 0.7668983957219251,
+    "accuracy_std": 0.028949850250255454,
+    "precision_mean": 0.7134537328460558,
+    "precision_std": 0.05764445402146511,
+    "recall_mean": 0.5580293501048218,
+    "recall_std": 0.06663200419742187,
+    "f1_mean": 0.6241683171265832,
+    "f1_std": 0.05437316605264636,
+    "roc_auc_mean": 0.8354218728162125,
+    "roc_auc_std": 0.027473976790891242
+  },
+  {
+    "disease": "heart",
+    "rows": 303,
+    "features": 13,
+    "accuracy_mean": 0.8352950819672131,
+    "accuracy_std": 0.044344243440430454,
+    "precision_mean": 0.84590869840038,
+    "precision_std": 0.06465080318946985,
+    "recall_mean": 0.7899735449735449,
+    "recall_std": 0.07232694405873005,
+    "f1_mean": 0.8141779023488196,
+    "f1_std": 0.05059808525951252,
+    "roc_auc_mean": 0.9030348124098124,
+    "roc_auc_std": 0.036337220912908405
+  },
+  {
+    "disease": "ckd",
+    "rows": 400,
+    "features": 24,
+    "accuracy_mean": 0.997,
+    "accuracy_std": 0.00640312423743284,
+    "precision_mean": 0.9988156862745098,
+    "precision_std": 0.004687867478867483,
+    "recall_mean": 0.9964000000000002,
+    "recall_std": 0.008662563131083094,
+    "f1_mean": 0.9975836759186123,
+    "f1_std": 0.0051629519943425925,
+    "roc_auc_mean": 0.9999733333333333,
+    "roc_auc_std": 0.00013063945294844353
+  },
+  {
+    "disease": "breast_cancer",
+    "rows": 569,
+    "features": 30,
+    "accuracy_mean": 0.9789147647880764,
+    "accuracy_std": 0.014168259705925447,
+    "precision_mean": 0.9856168866112145,
+    "precision_std": 0.015141670110899142,
+    "recall_mean": 0.9575526024363233,
+    "recall_std": 0.0335753896052761,
+    "f1_mean": 0.9710523331362089,
+    "f1_std": 0.01979728365758416,
+    "roc_auc_mean": 0.99484400589584,
+    "roc_auc_std": 0.0053363373657416635
+  }
+]
