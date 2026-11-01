@@ -1,4 +1,4 @@
-﻿import {
+import {
   Activity,
   ArrowLeft,
   CheckCircle2,
@@ -13,6 +13,10 @@ export default function RiskResult({
   result,
   onBack,
   onReset,
+  onSave,
+  saving = false,
+  saved = false,
+  saveMessage = "",
 }) {
   const percentage = Math.max(
     0,
@@ -120,11 +124,21 @@ export default function RiskResult({
       </div>
 
       <div className="result-actions">
+        <button
+          type="button"
+          className="secondary-button"
+          onClick={onSave}
+          disabled={saving || saved}
+        >
+          <ShieldCheck size={17} />
+          {saved ? "Assessment saved" : saving ? "Saving..." : "Save assessment"}
+        </button>
         <button type="button" className="secondary-button" onClick={onReset}>
           <RotateCcw size={17} />
           New assessment
         </button>
       </div>
+      {saveMessage && <p role="status" className="workspace-help">{saveMessage}</p>}
 
       <div className="medical-note">
         <ShieldCheck size={20} />

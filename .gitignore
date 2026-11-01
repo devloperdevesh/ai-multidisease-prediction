@@ -234,3 +234,7 @@ models/**/*.joblib
 models/**/*.pkl
 models/**/*.pickle
 
+
+# Local application database and instance data
+instance/
+

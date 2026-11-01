@@ -1,6 +1,7 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from flask import Flask, jsonify, request
+from app.api.report_store import initialize, save_report, list_reports, delete_report
 
 from src.config import DISEASES
 from src.prediction.production_predictor import ProductionPredictor
@@ -9,6 +10,7 @@ from src.prediction.schemas import get_disease_schema
 
 def create_app() -> Flask:
     app = Flask(__name__)
+    initialize()
 
     predictors = {
         disease: ProductionPredictor(disease)
@@ -150,6 +152,50 @@ def create_app() -> Flask:
                     )
                 }
             ), 500
+
+
+    @app.get("/api/metrics")
+    def metrics():
+        import json
+        from src.config import RESULTS_DIR
+
+        results_path = RESULTS_DIR / "model_training_results.json"
+        best_path = RESULTS_DIR / "best_models.json"
+
+        if not results_path.exists() or not best_path.exists():
+            return jsonify({"error": "Training result files not found."}), 404
+
+        with results_path.open("r", encoding="utf-8-sig") as file:
+            experiments = json.load(file)
+
+        with best_path.open("r", encoding="utf-8-sig") as file:
+            selected = json.load(file)
+
+        return jsonify({
+            "source": "reports/results",
+            "results": experiments,
+            "selected": selected
+        })
+
+    @app.get("/api/reports")
+    def reports():
+        return jsonify({"reports": list_reports()})
+
+    @app.post("/api/reports")
+    def create_report():
+        if not request.is_json:
+            return jsonify({"error": "JSON body required."}), 400
+        try:
+            report = save_report(request.get_json(silent=True) or {})
+            return jsonify({"report": report}), 201
+        except (ValueError, TypeError) as exc:
+            return jsonify({"error": str(exc)}), 400
+
+    @app.delete("/api/reports/<report_id>")
+    def remove_report(report_id):
+        if delete_report(report_id):
+            return jsonify({"deleted": True})
+        return jsonify({"error": "Report not found."}), 404
 
     return app
 

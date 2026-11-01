@@ -1,0 +1,180 @@
+{
+  "created_at": "20261101_201225",
+  "project": "ai-multidisease-prediction",
+  "checks": {
+    "repeated_cross_validation": {
+      "passed": true,
+      "configurations": 24,
+      "fold_evaluations": 600,
+      "folds_per_configuration": 25,
+      "audit_metadata": {
+        "created_at": "20261101_200801",
+        "random_state": 42,
+        "method": "RepeatedStratifiedKFold",
+        "n_splits": 5,
+        "n_repeats": 5,
+        "folds_per_model": 25,
+        "total_experiments": 24,
+        "total_model_fits": 600,
+        "scoring_metrics": [
+          "roc_auc",
+          "accuracy",
+          "precision",
+          "recall",
+          "f1"
+        ],
+        "best_by_mean_roc_auc": {
+          "diabetes": {
+            "model": "logistic_regression",
+            "mean_roc_auc": 0.8360751921733054,
+            "std_roc_auc": 0.030917095651886117
+          },
+          "heart": {
+            "model": "random_forest",
+            "mean_roc_auc": 0.9071073082010582,
+            "std_roc_auc": 0.03812007411508273
+          },
+          "ckd": {
+            "model": "svm",
+            "mean_roc_auc": 1.0,
+            "std_roc_auc": 0.0
+          },
+          "breast_cancer": {
+            "model": "svm",
+            "mean_roc_auc": 0.9950948802201667,
+            "std_roc_auc": 0.004551708628420454
+          }
+        },
+        "outputs": {
+          "fold_results": "reports\\repeated_cv\\20261101_200801\\repeated_cv_fold_results.csv",
+          "summary": "reports\\repeated_cv\\20261101_200801\\repeated_cv_summary.csv",
+          "roc_auc_plot": "reports\\repeated_cv\\20261101_200801\\repeated_cv_roc_auc_comparison.png"
+        },
+        "note": "Cross-validation results are internal validation estimates, not independent external clinical validation."
+      }
+    },
+    "research_validation": {
+      "passed": true,
+      "files": [
+        {
+          "path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\research_validation\\20261101_200213\\roc_curves_all_24_experiments.png",
+          "exists": true
+        },
+        {
+          "path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\research_validation\\20261101_200213\\confusion_matrices_all_24_experiments.png",
+          "exists": true
+        },
+        {
+          "path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\research_validation\\20261101_200213\\all_24_experiment_metrics.csv",
+          "exists": true
+        },
+        {
+          "path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\research_validation\\20261101_200213\\research_validation_audit.json",
+          "exists": true
+        }
+      ],
+      "experiment_rows": 24
+    },
+    "class_imbalance_audit": {
+      "diabetes": {
+        "rows": 768,
+        "features": 8,
+        "class_counts": {
+          "0": 500,
+          "1": 268
+        },
+        "majority_minority_ratio": 1.8656716417910448
+      },
+      "heart": {
+        "rows": 303,
+        "features": 13,
+        "class_counts": {
+          "0": 164,
+          "1": 139
+        },
+        "majority_minority_ratio": 1.1798561151079137
+      },
+      "ckd": {
+        "rows": 400,
+        "features": 24,
+        "class_counts": {
+          "0": 150,
+          "1": 250
+        },
+        "majority_minority_ratio": 1.6666666666666667
+      },
+      "breast_cancer": {
+        "rows": 569,
+        "features": 30,
+        "class_counts": {
+          "0": 357,
+          "1": 212
+        },
+        "majority_minority_ratio": 1.6839622641509433
+      }
+    },
+    "existing_training_evidence": {
+      "files": [
+        {
+          "path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\results\\best_models.json",
+          "exists": true
+        },
+        {
+          "path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\results\\model_comparison.csv",
+          "exists": true
+        },
+        {
+          "path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\results\\model_training_results.json",
+          "exists": true
+        }
+      ],
+      "all_present": true
+    },
+    "pytest": {
+      "return_code": 0,
+      "passed": true,
+      "output": ".........................................                                [100%]\n41 passed in 3.21s\n\n"
+    },
+    "frontend_build": {
+      "passed": false,
+      "reason": "package.json not found at project root"
+    }
+  },
+  "ckd_diagnostics": {
+    "rows": 400,
+    "features": 24,
+    "missing_feature_cells": 1012,
+    "duplicate_feature_rows": 0,
+    "class_counts": {
+      "0": 150,
+      "1": 250
+    },
+    "numeric_feature_target_correlations": {
+      "hemo": -0.7689192107584923,
+      "pcv": -0.7414273352266597,
+      "sg": -0.7321634658096832,
+      "rbcc": -0.6990887828938342,
+      "al": 0.6270896824611513,
+      "bgr": 0.41967217104127724,
+      "bu": 0.38060456885948113,
+      "sod": -0.3756735385494124,
+      "su": 0.34406986270600004,
+      "sc": 0.2999694247524009,
+      "bp": 0.29407672078228986,
+      "wbcc": 0.2319194507261392,
+      "age": 0.2272675462597023,
+      "pot": 0.0845411725113595
+    },
+    "suspicious_feature_names_to_review": [],
+    "interpretation": "These are screening diagnostics, not proof that leakage is present or absent. Source provenance and feature-generation logic require manual review."
+  },
+  "warnings": [
+    "CKD's near-perfect cross-validation scores require source-level and independent-dataset investigation.",
+    "Repeated cross-validation is internal validation, not external clinical validation.",
+    "Class stratification does not itself correct class imbalance.",
+    "No clinical deployment or diagnostic claim is established by these experiments."
+  ],
+  "overall_technical_checks_passed": false,
+  "critical_check_count": 4,
+  "critical_check_total": 5
+}

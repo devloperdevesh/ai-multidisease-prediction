@@ -82,10 +82,10 @@ class ProductionPredictor:
         if hasattr(self.model, "predict_proba"):
             probabilities = self.model.predict_proba(dataframe)
 
-            if probabilities.shape[1] == 2:
-                probability = float(
-                    probabilities[0][1]
-                )
+            classes = list(getattr(self.model, "classes_", []))
+            if probabilities.shape[1] == len(classes) and 1 in classes:
+                positive_index = classes.index(1)
+                probability = float(probabilities[0][positive_index])
 
         return {
             "disease": self.disease,
