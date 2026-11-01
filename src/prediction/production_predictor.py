@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -34,7 +34,7 @@ class ProductionPredictor:
 
         with best_models_path.open(
             "r",
-            encoding="utf-8",
+            encoding="utf-8-sig",
         ) as file:
             registry = json.load(file)
 
