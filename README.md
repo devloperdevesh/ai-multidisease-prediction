@@ -6,12 +6,6 @@
 
 A unified machine learning platform for preliminary risk assessment across four disease categories.
 
-###  Dashboard
-
-<p align="center">
-  <img src="docs/screenshots/01_MediPredict_AI_Dashboard.png" alt="MediPredict AI Dashboard" width="900">
-</p>
-
 <p>
   <a href="https://medipredict-ai-two.vercel.app/">
     <img src="https://img.shields.io/badge/Live%20Application-Visit%20Project-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Application">
@@ -22,6 +16,9 @@ A unified machine learning platform for preliminary risk assessment across four 
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License">
   </a>
+</p>
+<p align="center">
+  <img src="docs/screenshots/01_MediPredict_AI_Dashboard.png" alt="MediPredict AI Dashboard" width="900">
 </p>
 
 **Machine Learning | Healthcare Research | Full-Stack Development**
