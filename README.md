@@ -1,426 +1,485 @@
-﻿# AI-Based Multi-Disease Risk Prediction System
+# MediPredict AI
+### AI-Based Multi-Disease Risk Prediction System
 
-## Final Year Major Research Project
+<p align="center">
+  <strong>A unified machine learning platform for preliminary risk assessment across four diseases.</strong>
+</p>
 
-**MediPredict AI** is a unified machine learning-based system for preliminary risk prediction across multiple diseases using clinical parameters, comparative model evaluation, disease-specific preprocessing, and web-based deployment.
+<p align="center">
+  <img src="docs/screenshots/01_MediPredict_AI_Dashboard.png" alt="MediPredict AI Dashboard" width="900">
+</p>
 
-> **Important:** This system provides preliminary risk assessment for academic and research purposes. It is not a confirmed medical diagnosis and must not replace professional medical advice, diagnosis, or treatment.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python">
+  <img src="https://img.shields.io/badge/React-Vite-61DAFB?logo=react">
+  <img src="https://img.shields.io/badge/Flask-Backend-black?logo=flask">
+  <img src="https://img.shields.io/badge/Scikit--learn-Machine%20Learning-orange">
+  <img src="https://img.shields.io/badge/Tests-41%20Passed-brightgreen">
+</p>
 
----
-
-## 1. Project Overview
-
-Healthcare datasets contain different clinical parameters, data-quality challenges, and modelling requirements for different diseases. Many academic machine learning systems focus on a single disease or demonstrate only one predictive model.
-
-This project proposes a unified platform supporting four disease-risk prediction tasks:
-
-- Diabetes
-- Heart Disease
-- Chronic Kidney Disease (CKD)
-- Breast Cancer
-
-For each disease, multiple machine learning algorithms are evaluated using appropriate preprocessing and common performance metrics. The best-performing model is selected separately for each disease and integrated into the prediction workflow.
-
----
-
-## 2. Research Gap
-
-Existing machine learning-based healthcare prediction projects frequently focus on individual diseases or use a limited number of predictive algorithms.
-
-This project addresses the identified gap by combining:
-
-1. Multi-disease risk prediction
-2. Comparative evaluation of multiple machine learning algorithms
-3. Disease-specific preprocessing
-4. Independent best-model selection
-5. Reproducible training and evaluation
-6. Web-based prediction workflow
-7. Academic documentation and testing
-
-The objective is to demonstrate a structured and reproducible machine learning workflow for preliminary disease-risk assessment rather than replacing clinical diagnosis.
+<p align="center">
+  <a href="https://github.com/devloperdevesh/ai-multidisease-prediction">GitHub Repository</a> •
+  <a href="https://medipredict-ai-api.onrender.com/api/health">Backend Health</a> •
+  <a href="docs/">Documentation</a>
+</p>
 
 ---
 
-## 3. Research Objectives
+> **Medical Disclaimer:** MediPredict AI is an academic research project for preliminary machine learning-based risk assessment. It is not a clinically validated diagnostic tool and must not replace professional medical advice, diagnosis, or treatment.
 
-The major objectives of the project are:
+## 1. Overview
 
-- Develop a unified multi-disease machine learning system.
-- Integrate datasets for four disease prediction tasks.
-- Apply disease-appropriate preprocessing techniques.
-- Compare multiple machine learning algorithms.
-- Evaluate models using multiple performance metrics.
-- Select the best-performing model independently for each disease.
-- Build a web-based interface for user interaction.
-- Provide preliminary risk predictions from clinical parameters.
-- Maintain reproducible data, training, evaluation, and testing workflows.
-- Document the complete research and software engineering process.
+MediPredict AI is a web-based multi-disease prediction system that integrates four machine learning classification workflows into one platform.
 
----
+The application provides disease-specific input forms, processes clinical parameters, generates model predictions, and presents model evaluation information through a unified interface.
 
-## 4. Diseases Covered
+### Diseases Supported
 
-| Disease | Dataset | Prediction Task |
-|---|---|---|
-| Diabetes | Pima Indians Diabetes Dataset | Binary risk prediction |
-| Heart Disease | UCI Heart Disease Dataset | Binary risk prediction |
-| Chronic Kidney Disease | UCI Chronic Kidney Disease Dataset | Binary classification |
-| Breast Cancer | UCI Breast Cancer Wisconsin Diagnostic Dataset | Benign/Malignant classification |
-
----
-
-## 5. Machine Learning Models
-
-| Model | Category | Purpose |
-|---|---|---|
-| Logistic Regression | Linear Classification | Interpretable baseline |
-| Decision Tree | Tree-Based Classification | Rule-based modelling |
-| Random Forest | Ensemble Learning | Robust non-linear modelling |
-| Support Vector Machine | Kernel-Based Classification | Classification in feature space |
-| K-Nearest Neighbours | Instance-Based Learning | Distance-based classification |
-| XGBoost | Gradient Boosting | Advanced ensemble modelling |
-
-The final model for each disease will be selected using actual experimental evaluation rather than predetermined assumptions.
-
----
-
-## 6. Data Processing Methodology
-
-The preprocessing pipeline is designed according to the characteristics of each dataset.
-
-The workflow includes:
-
-1. Dataset acquisition
-2. Dataset validation
-3. Data-quality auditing
-4. Missing-value handling
-5. Invalid-value handling
-6. Categorical encoding
-7. Feature scaling
-8. Class-distribution analysis
-9. Feature preparation
-10. Train-test separation
-11. Model training
-12. Model evaluation
-
-Disease-specific preprocessing is applied where required rather than forcing identical preprocessing rules across all datasets.
-
----
-
-## 7. Model Evaluation
-
-Models are evaluated using:
-
-| Metric | Purpose |
+| Disease | Prediction Task |
 |---|---|
-| Accuracy | Overall classification correctness |
-| Precision | Correctness of positive predictions |
-| Recall | Ability to identify positive cases |
-| F1-Score | Balance between precision and recall |
-| ROC-AUC | Model discrimination capability |
+| Diabetes | Binary risk classification |
+| Heart Disease | Binary risk classification |
+| Chronic Kidney Disease (CKD) | Binary classification |
+| Breast Cancer | Benign / Malignant classification |
 
-### Experimental Results
+## 2. Key Features
 
-Final performance values will be added only after actual model training and evaluation.
+- Four disease prediction workflows in one platform.
+- Disease-specific clinical input forms.
+- Machine learning model evaluation.
+- Independent model selection for each disease.
+- Prediction result interface.
+- Model performance analytics.
+- Saved assessment interface.
+- Model evaluation CSV export interface.
+- Flask-based REST API.
+- Automated testing with Pytest.
+- Academic and technical documentation.
 
-| Disease | Best Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|---|---|---:|---:|---:|---:|---:|
-| Diabetes | To be determined | TBD | TBD | TBD | TBD | TBD |
-| Heart Disease | To be determined | TBD | TBD | TBD | TBD | TBD |
-| CKD | To be determined | TBD | TBD | TBD | TBD | TBD |
-| Breast Cancer | To be determined | TBD | TBD | TBD | TBD | TBD |
+## 3. Application Screenshots
 
-No placeholder value will be presented as a final experimental result.
+### Dashboard
+
+<p align="center">
+  <img src="docs/screenshots/01_MediPredict_AI_Dashboard.png" alt="MediPredict Dashboard" width="900">
+</p>
+
+### Disease Input Forms
+
+**Diabetes**
+
+<p align="center">
+  <img src="docs/screenshots/02A_MediPredict_AI_Diabetes_Form.png" alt="Diabetes Form" width="850">
+</p>
+
+**Heart Disease**
+
+<p align="center">
+  <img src="docs/screenshots/02B_MediPredict_AI_Heart_Disease_Form.png" alt="Heart Disease Form" width="850">
+</p>
+
+**Chronic Kidney Disease**
+
+<p align="center">
+  <img src="docs/screenshots/02C_MediPredict_AI_CKD_Form..png" alt="CKD Form" width="850">
+</p>
+
+**Breast Cancer**
+
+<p align="center">
+  <img src="docs/screenshots/02D_MediPredict_AI_Breast_Cancer_Form.png" alt="Breast Cancer Form" width="850">
+</p>
+
+### Prediction Result
+
+<p align="center">
+  <img src="docs/screenshots/03A_MediPredict_AI_Diabetes_Prediction.png" alt="Diabetes Prediction" width="850">
+</p>
+
+### Model Analytics
+
+**Performance Overview**
+
+<p align="center">
+  <img src="docs/screenshots/03-model-analytics-circular-performance.png" alt="Model Performance Analytics" width="850">
+</p>
+
+**ROC-AUC Comparison**
+
+<p align="center">
+  <img src="docs/screenshots/04-model-analytics-roc-auc-comparison.png" alt="ROC AUC Comparison" width="850">
+</p>
+
+### Saved Assessments
+
+<p align="center">
+  <img src="docs/screenshots/05-reports-saved-assessment.png" alt="Saved Assessments" width="850">
+</p>
+
+### Evaluation Export
+
+<p align="center">
+  <img src="docs/screenshots/07-model-evaluation-csv-export.png" alt="Model Evaluation CSV Export" width="850">
+</p>
 
 ---
 
-## 8. System Architecture
+## 4. Machine Learning Performance
 
-The planned system follows a modular architecture:
+The following metrics are taken from the repository's recorded evaluation file:
+
+`reports/results/best_models.json`
+
+The selected model recorded for all four disease tasks is Logistic Regression.
+
+### Recorded Test-Set Results
+
+| Disease | Selected Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---|---|---:|---:|---:|---:|---:|
+| Diabetes | Logistic Regression | 70.78% | 60.00% | 50.00% | 54.55% | 81.30% |
+| Heart Disease | Logistic Regression | 86.89% | 81.25% | 92.86% | 86.67% | 95.13% |
+| CKD | Logistic Regression | 98.75% | 100.00% | 98.00% | 98.99% | 100.00% |
+| Breast Cancer | Logistic Regression | 96.49% | 97.50% | 92.86% | 95.12% | 99.60% |
+
+### Cross-Validation ROC-AUC
+
+| Disease | Mean CV ROC-AUC |
+|---|---:|
+| Diabetes | 84.34% |
+| Heart Disease | 89.60% |
+| CKD | 100.00% |
+| Breast Cancer | 99.58% |
+
+### Evaluation Metrics
+
+| Metric | Description |
+|---|---|
+| Accuracy | Overall proportion of correct predictions |
+| Precision | Correctness of positive predictions |
+| Recall | Ability to identify actual positive cases |
+| F1-Score | Harmonic mean of precision and recall |
+| ROC-AUC | Ability to distinguish between classes |
+
+**Research Integrity:** These are recorded dataset evaluation results, not evidence of real-world clinical performance. The very high CKD result requires additional investigation of dataset provenance, possible leakage, split methodology, and independent validation before making generalisation claims.
+
+Performance can vary with dataset versions, preprocessing, random seeds, and train-test splits.
+
+## 5. System Architecture
 
 ```mermaid
 flowchart TD
-    A[User] --> B[Web Interface]
-    B --> C[Flask Backend / Prediction API]
+    A[User] --> B[React + Vite Frontend]
+    B --> C[Flask REST API]
+    C --> D[Input Validation]
+    D --> E{Disease Selection}
 
-    C --> D{Disease Selection}
-    C --> E[Input Validation]
+    E --> F[Diabetes]
+    E --> G[Heart Disease]
+    E --> H[CKD]
+    E --> I[Breast Cancer]
 
-    D --> F[Diabetes]
-    D --> G[Heart Disease]
-    D --> H[Chronic Kidney Disease]
-    D --> I[Breast Cancer]
-
-    E --> J[Disease-Specific Preprocessor]
-
-    F --> J
+    F --> J[Disease-Specific Processing]
     G --> J
     H --> J
     I --> J
 
-    J --> K[Selected Trained ML Model]
-    K --> L[Prediction + Risk Probability]
-    L --> M[Result Presentation]
+    J --> K[Trained ML Model]
+    K --> L[Prediction Output]
+    L --> M[Frontend Result Interface]
 
-    N[ML Training & Evaluation] --> K
+    N[Training and Evaluation Pipeline] --> K
 ```
 
-The machine learning workflow is separated from the web application to support reproducibility, testing, maintenance, and future model replacement.
----
+The application separates the user interface, API layer, disease-specific processing, and trained model artifacts.
 
-## 9. Technology Stack
+## 6. Technology Stack
 
-### Machine Learning
+| Layer | Technologies |
+|---|---|
+| Programming | Python, JavaScript |
+| Frontend | React, Vite, HTML, CSS |
+| Backend | Flask, REST API |
+| Machine Learning | Scikit-learn, XGBoost |
+| Data Processing | Pandas, NumPy |
+| Model Persistence | Joblib |
+| Testing | Pytest |
+| Deployment | Render, Vercel configuration |
+| Version Control | Git, GitHub |
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- Joblib
+## 7. Backend API
 
-### Backend
+The backend API is deployed on Render.
 
-- Flask
-- Python-based prediction services
-- REST-style API design
+**Base URL:**
+https://medipredict-ai-api.onrender.com
 
-### Frontend
+| Endpoint | Purpose |
+|---|---|
+| `/api/health` | Backend health and loaded model status |
+| `/api/diseases` | Supported disease information |
+| `/api/metrics` | Model metrics information |
 
-- React
-- Vite
-- HTML
-- CSS
-- JavaScript
+### Health Check
 
-### Development
+```bash
+curl https://medipredict-ai-api.onrender.com/api/health
+```
 
+Previously verified health response:
+
+```json
+{
+  "models_loaded": [
+    "diabetes",
+    "heart",
+    "ckd",
+    "breast_cancer"
+  ],
+  "service": "MediPredict AI API",
+  "status": "healthy"
+}
+```
+
+**Deployment note:** Render free-tier services may take time to wake after inactivity. Their local filesystem may be ephemeral, so SQLite data should not be treated as permanent storage.
+
+## 8. Testing and Validation
+
+The project test suite was executed using:
+
+```bash
+python -m pytest -q
+```
+
+**Recorded result: 41 passed.**
+
+The frontend production build was executed using:
+
+```bash
+npm --prefix frontend run build
+```
+
+**Recorded build information:**
+
+- Vite 8.3.5
+- 2,053 modules transformed
+- JavaScript output: approximately 283.45 kB
+- CSS output: approximately 51.94 kB
+- Build completed successfully
+
+These are recorded execution results and may vary across environments or future code changes.
+
+## 9. Run Locally
+
+### Prerequisites
+
+- Python 3.x
+- Node.js and npm
 - Git
-- GitHub
-- Feature branches
-- Pull requests
-- Protected main branch
 
-### Testing
+### Step 1: Clone Repository
 
-- Pytest
-- Unit testing
-- Data preprocessing validation
-- Model component validation
-- Prediction workflow testing
-
----
-
-# 10. Project Documentation
-
-This table is the primary documentation checkout point for the complete project.
-
-| No. | Document | Purpose | Checkout |
-|---:|---|---|---|
-| 01 | Literature Survey | Research papers, existing approaches, findings, and research gap | [Open](docs/01_literature_survey.md) |
-| 02 | High-Level Design | System architecture, components, data flow, deployment, security, and scalability | [Open](docs/02_hld.md) |
-| 03 | Low-Level Design | Modules, processing logic, prediction workflow, API planning, and error handling | [Open](docs/03_lld.md) |
-| 04 | Dataset Documentation | Dataset sources, structure, targets, data quality, and governance | [Open](docs/04_dataset_documentation.md) |
-| 05 | Preprocessing Methodology | Missing values, invalid values, encoding, scaling, leakage prevention, and reproducibility | [Open](docs/05_preprocessing_methodology.md) |
-| 06 | Test Cases | Functional, prediction, validation, API, and UI test cases | [Open](docs/06_test_cases.md) |
-| 07 | Initial UI Design | UI structure, user flow, prediction results, analytics, voice interaction, and responsiveness | [Open](docs/07_initial_ui_design.md) |
-| 08 | Complexity, Cost, Social & Health | Complexity, cost, social relevance, and health considerations | [Open](docs/08_complexity_cost_social_health.md) |
-| 09 | SDG, Legal & Environmental | SDG mapping, legal, cultural, environmental, and sustainability aspects | [Open](docs/09_sdg_legal_environmental.md) |
-| 10 | Project Type | Academic classification, research orientation, technical domain, and scope | [Open](docs/10_project_type.md) |
-| 11 | Monthly Project Progress Report | Monthly progress, accomplishments, assignments, plans, and guide assessment | [Open](docs/11_monthly_project_progress.md) |
-| 12 | Review 2 Checklist | Complete Project Review 2 requirements and submission checklist | [Open](docs/12_review_2_checklist.md) |
-
----
-
-## 11. Project Review 2 Coverage
-
-| Review Requirement | Documentation |
-|---|---|
-| Literature Survey | [Open Literature Survey](docs/01_literature_survey.md) |
-| High-Level Design | [Open HLD](docs/02_hld.md) |
-| Low-Level Design | [Open LLD](docs/03_lld.md) |
-| Dataset | [Open Dataset Documentation](docs/04_dataset_documentation.md) |
-| Preprocessing | [Open Preprocessing Methodology](docs/05_preprocessing_methodology.md) |
-| Test Cases | [Open Test Cases](docs/06_test_cases.md) |
-| Initial UI Design | [Open Initial UI Design](docs/07_initial_ui_design.md) |
-| Complexity / Cost / Social / Health | [Open Academic Evaluation](docs/08_complexity_cost_social_health.md) |
-| Legal / Cultural / Environmental / SDG | [Open SDG / Legal / Environmental](docs/09_sdg_legal_environmental.md) |
-| Project Type | [Open Project Type](docs/10_project_type.md) |
-| Monthly Project Progress | [Open MPR Documentation](docs/11_monthly_project_progress.md) |
-| Review 2 Checklist | [Open Review 2 Checklist](docs/12_review_2_checklist.md) |
-
----
-
-## 12. Current Project Status
-
-### Engineering Foundation
-
-- Project repository established
-- Git workflow established
-- Protected main branch
-- Modular source structure
-- Dataset acquisition workflow
-- Dataset audit workflow
-- Preprocessing foundation
-- Model factory
-- Prediction component
-- Unit tests
-- Review 2 documentation foundation
-
-### Validation
-
-Current baseline test suite:
-
-12 tests passed
-
-Final machine learning performance will be added after the complete training and evaluation pipeline has been executed.
-
----
-
-## 13. Repository Structure
-
-The repository is organized into separate application, data, machine learning, testing, documentation, and reporting components.
-
-```mermaid
-flowchart TD
-    ROOT["ai-multidisease-prediction/"]
-
-    ROOT --> APP["app/"]
-    ROOT --> DATA["data/"]
-    ROOT --> MODELS["models/"]
-    ROOT --> REPORTS["reports/"]
-    ROOT --> SRC["src/"]
-    ROOT --> TESTS["tests/"]
-    ROOT --> DOCS["docs/"]
-    ROOT --> REQ["requirements.txt"]
-    ROOT --> LICENSE["LICENSE"]
-    ROOT --> README["README.md"]
-
-    APP --> APPPY["app.py"]
-    APP --> STATIC["static/"]
-    APP --> TEMPLATES["templates/"]
-
-    DATA --> RAW["raw/"]
-    DATA --> PROCESSED["processed/"]
-
-    MODELS --> DIAB["diabetes/"]
-    MODELS --> HEART["heart/"]
-    MODELS --> CKD["ckd/"]
-    MODELS --> BC["breast_cancer/"]
-
-    REPORTS --> RESULTS["results/"]
-
-    SRC --> SDATA["data/"]
-    SRC --> SMODELS["models/"]
-    SRC --> SPRED["prediction/"]
-    SRC --> STRAIN["training/"]
-    SRC --> CONFIG["config.py"]
-
-    DOCS --> LIT["01_literature_survey.md"]
-    DOCS --> HLD["02_hld.md"]
-    DOCS --> LLD["03_lld.md"]
-    DOCS --> DATA_DOC["04_dataset_documentation.md"]
-    DOCS --> TEST_DOC["06_test_cases.md"]
-
-    TESTS --> TFILES["Unit & Integration Tests"]
+```bash
+git clone https://github.com/devloperdevesh/ai-multidisease-prediction.git
+cd ai-multidisease-prediction
 ```
 
-### Main Components
+### Step 2: Create Python Environment
 
-| Directory | Purpose |
+**Windows PowerShell:**
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+### Step 3: Install Backend Dependencies
+
+```powershell
+pip install -r requirements.txt
+```
+
+### Step 4: Install Frontend Dependencies
+
+```powershell
+npm --prefix frontend install
+```
+
+### Step 5: Configure Environment Variables
+
+Create a local `.env` file if required by the application configuration.
+
+Example frontend API URL:
+
+```env
+VITE_API_BASE_URL=http://127.0.0.1:5000
+```
+
+Never commit credentials, secret keys, or private environment files.
+
+### Step 6: Start Backend
+
+```powershell
+python -m app.api.server
+```
+
+### Step 7: Start Frontend
+
+Open another terminal:
+
+```powershell
+npm --prefix frontend run dev
+```
+
+Open the local URL printed by Vite.
+
+### Step 8: Run Tests
+
+```powershell
+python -m pytest -q
+```
+
+## 10. Repository Structure
+
+```text
+ai-multidisease-prediction/
+│
+├── app/
+│   ├── api/
+│   ├── static/
+│   └── templates/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── docs/
+│   ├── screenshots/
+│   ├── 01_literature_survey.md
+│   ├── 02_hld.md
+│   ├── 03_lld.md
+│   ├── 04_dataset_documentation.md
+│   ├── 05_preprocessing_methodology.md
+│   ├── 06_test_cases.md
+│   └── ...
+│
+├── models/
+│   ├── diabetes/
+│   ├── heart/
+│   ├── ckd/
+│   └── breast_cancer/
+│
+├── reports/
+│   └── results/
+│       └── best_models.json
+│
+├── src/
+│   ├── data/
+│   ├── models/
+│   ├── prediction/
+│   └── training/
+│
+├── tests/
+├── frontend/
+├── requirements.txt
+├── render.yaml
+├── vercel.json
+├── LICENSE
+└── README.md
+```
+
+## 11. Project Documentation
+
+| Document | Description |
 |---|---|
-| `app/` | Flask web application and frontend assets |
-| `data/` | Raw and processed datasets |
-| `models/` | Disease-specific trained model artifacts |
-| `reports/` | Evaluation and research outputs |
-| `src/` | Core ML pipeline and prediction logic |
-| `tests/` | Automated testing |
-| `docs/` | Research and design documentation |
+| [Literature Survey](docs/01_literature_survey.md) | Research papers, existing approaches, and research gap |
+| [High-Level Design](docs/02_hld.md) | Architecture, components, and data flow |
+| [Low-Level Design](docs/03_lld.md) | Modules and processing workflow |
+| [Dataset Documentation](docs/04_dataset_documentation.md) | Dataset sources and structure |
+| [Preprocessing Methodology](docs/05_preprocessing_methodology.md) | Data cleaning, encoding, and scaling |
+| [Test Cases](docs/06_test_cases.md) | Functional and validation tests |
+| [Initial UI Design](docs/07_initial_ui_design.md) | Interface and user flow |
+| [Complexity, Cost, Social & Health](docs/08_complexity_cost_social_health.md) | Academic evaluation |
+| [SDG, Legal & Environmental](docs/09_sdg_legal_environmental.md) | Sustainability and legal considerations |
+| [Project Type](docs/10_project_type.md) | Project classification |
+| [Monthly Progress](docs/11_monthly_project_progress.md) | Project progress report |
+| [Review 2 Checklist](docs/12_review_2_checklist.md) | Academic review checklist |
 
----
-## 14. Reproducibility and Research Integrity
+## 12. Research Methodology
 
-The project follows a reproducible machine learning workflow.
+The project follows a structured machine learning workflow:
 
-Key principles include:
+1. Dataset acquisition.
+2. Dataset inspection and quality checks.
+3. Missing and invalid value handling.
+4. Categorical encoding where required.
+5. Feature scaling where required.
+6. Train-test separation.
+7. Model training and comparison.
+8. Evaluation using classification metrics.
+9. Best-model selection for each disease.
+10. Integration into the prediction application.
 
-- Fixed random state where applicable.
-- Dataset auditing before modelling.
-- Disease-specific preprocessing.
-- Separation of training and evaluation workflows.
-- Prevention of data leakage through appropriate pipeline design.
-- Actual experimental results only.
-- Version-controlled source code.
-- Testable software components.
-- Documentation of assumptions and limitations.
+Disease-specific preprocessing is used because the datasets have different feature types and data-quality characteristics.
 
----
+## 13. Limitations and Responsible Use
 
-## 15. Limitations
+- Public datasets may not represent all patient populations.
+- Model performance depends on dataset quality and evaluation methodology.
+- High test scores do not establish clinical reliability.
+- The project has not undergone independent clinical validation.
+- Predictions must not be used to make treatment decisions.
+- Real-world deployment would require privacy, security, regulatory, and clinical review.
+- Render free-tier storage may not provide persistent assessment history.
 
-The project has the following limitations:
+## 14. Future Scope
 
-- Prediction quality depends on dataset quality and representativeness.
-- Public datasets may not represent all real-world patient populations.
-- Different diseases require different clinical parameters.
-- Dataset size may limit generalisation.
-- The system has not undergone clinical validation.
-- Predictions are not confirmed medical diagnoses.
-- Real-world healthcare deployment would require appropriate regulatory, security, privacy, and clinical validation processes.
+- Independent external validation.
+- Dataset provenance and data leakage audits.
+- Explainable AI using SHAP or LIME.
+- Larger and more representative datasets.
+- Model calibration and threshold analysis.
+- Improved privacy and secure data storage.
+- Persistent database infrastructure.
+- Model monitoring and drift detection.
+- Clinical collaboration and validation.
 
----
+## 15. Team and Contributions
 
-## 16. Future Scope
+| Team Member | Roll Number | Contribution |
+|---|---:|---|
+| Karan Kumar Tiwari | 2302220100093 | Website UI, design, development, and implementation |
+| Devesh Chauhan | 2302220100064 | Website design, development, and implementation |
+| Payal Chauhan | 2302220100125 | Research paper work and presentation |
+| Mamta Tiwari | 2302220100099 | Research paper work and presentation |
 
-Potential future improvements include:
+### Work Division
 
-- Hyperparameter optimization
-- Larger and more diverse datasets
-- Explainable AI using SHAP or LIME
-- Advanced ensemble techniques
-- Deep learning models
-- Cloud deployment
-- Electronic Health Record integration
-- IoT and wearable-device integration
-- Continuous model monitoring
-- Clinical validation
-- Privacy-preserving healthcare AI
+| Activity | Contributors |
+|---|---|
+| Synopsis 1 | Mamta Tiwari |
+| PPT 1 | Payal Chauhan |
+| PPT 2 | Mamta Tiwari |
+| Research paper reading and base paper selection | Mamta Tiwari, Payal Chauhan |
+| MediPredict website | Karan Kumar Tiwari, Devesh Chauhan |
 
----
+**Project Guide:** Mr. Anurag Gupta, Assistant Professor, Department of Computer Science
 
-## 17. Social, Health and Sustainability Relevance
-
-The project demonstrates the application of machine learning to healthcare-related risk assessment in an academic research setting.
-
-The system incorporates responsible-use considerations by clearly communicating that its predictions are preliminary and should not be treated as medical diagnoses.
-
-The project aligns particularly with:
-
-- SDG 3: Good Health and Well-Being
-- SDG 9: Industry, Innovation and Infrastructure
-
-Detailed discussion is available in the corresponding project documentation.
-
----
-
-## 18. Team
-
-| Team Member | Roll Number |
-|---|---:|
-| Karan Kumar Tiwari | 2302220100093 |
-| Payal Chauhan | 2302220100125 |
-| Mamta Tiwari | 2302220100099 |
-| Devesh Chauhan | 2302220100064 |
-
-**Guide:** Mr. Anurag Gupta, Assistant Professor, Department of Computer Science
-
-**College:** ITS Engineering College, Greater Noida
+**Institution:** ITS Engineering College, Greater Noida
 
 **University:** Dr. A.P.J. Abdul Kalam Technical University, Lucknow, Uttar Pradesh
 
----
+## 16. Academic Relevance
 
-## 19. License
+This project explores the application of machine learning in healthcare-related risk assessment.
+
+It is aligned with:
+
+- **SDG 3:** Good Health and Well-Being
+- **SDG 9:** Industry, Innovation and Infrastructure
+
+The project is developed as a final-year major research project and is intended for academic demonstration and further research.
+
+## 17. License
 
 This project is released under the MIT License.
 
@@ -428,10 +487,7 @@ See [LICENSE](LICENSE) for details.
 
 ---
 
-## 20. Academic Disclaimer
-
-This repository is developed as a final-year major research project.
-
-The system is intended for academic and research demonstration only. It provides preliminary machine learning-based risk assessment and must not be interpreted as a clinically validated diagnostic system.
-
-Final conclusions and performance claims will be based on documented experimental results.
+<p align="center">
+  <strong>MediPredict AI</strong><br>
+  Academic Research • Machine Learning • Healthcare Technology
+</p>

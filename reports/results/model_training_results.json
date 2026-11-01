@@ -6,7 +6,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.0085,
+    "training_seconds": 0.0107,
     "cv_roc_auc_mean": 0.8433637873754153,
     "cv_roc_auc_std": 0.018549552071526722,
     "test_metrics": {
@@ -30,7 +30,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.0075,
+    "training_seconds": 0.0154,
     "cv_roc_auc_mean": 0.6510063676633444,
     "cv_roc_auc_std": 0.014780431693809631,
     "test_metrics": {
@@ -54,7 +54,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.4635,
+    "training_seconds": 0.6294,
     "cv_roc_auc_mean": 0.8209482281284608,
     "cv_roc_auc_std": 0.020899950976638763,
     "test_metrics": {
@@ -78,7 +78,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.0437,
+    "training_seconds": 0.0667,
     "cv_roc_auc_mean": 0.8333084163898116,
     "cv_roc_auc_std": 0.022803458956872403,
     "test_metrics": {
@@ -102,7 +102,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.006,
+    "training_seconds": 0.0092,
     "cv_roc_auc_mean": 0.7843320874861572,
     "cv_roc_auc_std": 0.03728143263534694,
     "test_metrics": {
@@ -126,7 +126,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.218,
+    "training_seconds": 0.2985,
     "cv_roc_auc_mean": 0.7981063122923587,
     "cv_roc_auc_std": 0.01915336417594889,
     "test_metrics": {
@@ -150,7 +150,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.0086,
+    "training_seconds": 0.0087,
     "cv_roc_auc_mean": 0.8959708568404221,
     "cv_roc_auc_std": 0.014838298262640983,
     "test_metrics": {
@@ -174,7 +174,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.01,
+    "training_seconds": 0.0072,
     "cv_roc_auc_mean": 0.6966532662184836,
     "cv_roc_auc_std": 0.02170211881952363,
     "test_metrics": {
@@ -198,7 +198,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.4963,
+    "training_seconds": 0.5257,
     "cv_roc_auc_mean": 0.8834726867335563,
     "cv_roc_auc_std": 0.03601501523618127,
     "test_metrics": {
@@ -222,7 +222,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.0124,
+    "training_seconds": 0.0138,
     "cv_roc_auc_mean": 0.8831689244732722,
     "cv_roc_auc_std": 0.024382972208831212,
     "test_metrics": {
@@ -246,7 +246,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.0078,
+    "training_seconds": 0.011,
     "cv_roc_auc_mean": 0.8824076889294281,
     "cv_roc_auc_std": 0.030469864730545793,
     "test_metrics": {
@@ -270,7 +270,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.1414,
+    "training_seconds": 0.1548,
     "cv_roc_auc_mean": 0.8637771246466899,
     "cv_roc_auc_std": 0.015777732605258783,
     "test_metrics": {
@@ -294,7 +294,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.0198,
+    "training_seconds": 0.0194,
     "cv_roc_auc_mean": 1.0,
     "cv_roc_auc_std": 0.0,
     "test_metrics": {
@@ -318,7 +318,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.0191,
+    "training_seconds": 0.0151,
     "cv_roc_auc_mean": 0.9666666666666666,
     "cv_roc_auc_std": 0.016457014715109592,
     "test_metrics": {
@@ -342,7 +342,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.4593,
+    "training_seconds": 0.5938,
     "cv_roc_auc_mean": 0.9994791666666668,
     "cv_roc_auc_std": 0.0006588078458683749,
     "test_metrics": {
@@ -366,7 +366,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.0202,
+    "training_seconds": 0.015,
     "cv_roc_auc_mean": 1.0,
     "cv_roc_auc_std": 0.0,
     "test_metrics": {
@@ -390,7 +390,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.0116,
+    "training_seconds": 0.0198,
     "cv_roc_auc_mean": 0.9917708333333332,
     "cv_roc_auc_std": 0.005253966755382654,
     "test_metrics": {
@@ -414,7 +414,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.1158,
+    "training_seconds": 0.1134,
     "cv_roc_auc_mean": 0.9983333333333334,
     "cv_roc_auc_std": 0.0015590239111558035,
     "test_metrics": {
@@ -438,7 +438,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.0156,
+    "training_seconds": 0.019,
     "cv_roc_auc_mean": 0.9957688338493291,
     "cv_roc_auc_std": 0.004665698474904977,
     "test_metrics": {
@@ -462,7 +462,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.0143,
+    "training_seconds": 0.0127,
     "cv_roc_auc_mean": 0.9172342621259031,
     "cv_roc_auc_std": 0.0375421661005599,
     "test_metrics": {
@@ -486,7 +486,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.3937,
+    "training_seconds": 0.397,
     "cv_roc_auc_mean": 0.9879772961816305,
     "cv_roc_auc_std": 0.007281943183619418,
     "test_metrics": {
@@ -510,7 +510,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.0426,
+    "training_seconds": 0.0197,
     "cv_roc_auc_mean": 0.9949432404540763,
     "cv_roc_auc_std": 0.00496429864635942,
     "test_metrics": {
@@ -534,7 +534,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.012,
+    "training_seconds": 0.0077,
     "cv_roc_auc_mean": 0.9871001031991744,
     "cv_roc_auc_std": 0.013581575955716877,
     "test_metrics": {
@@ -558,7 +558,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.4493,
+    "training_seconds": 0.154,
     "cv_roc_auc_mean": 0.9927760577915377,
     "cv_roc_auc_std": 0.0050133984732677024,
     "test_metrics": {
