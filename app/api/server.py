@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from flask import Flask, jsonify, request
+from flask_cors import CORS
+
 from app.api.report_store import initialize, save_report, list_reports, delete_report
 
 from src.config import DISEASES
@@ -10,6 +12,17 @@ from src.prediction.schemas import get_disease_schema
 
 def create_app() -> Flask:
     app = Flask(__name__)
+    import os
+    allowed_origins = [
+        origin.strip()
+        for origin in os.getenv(
+            "FRONTEND_ORIGIN",
+            "https://medipredict-ai-two.vercel.app,http://localhost:5173"
+        ).split(",")
+        if origin.strip()
+    ]
+    CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
+
     initialize()
 
     predictors = {
