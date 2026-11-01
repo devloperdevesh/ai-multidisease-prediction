@@ -1,0 +1,45 @@
+{
+  "created_at": "20261101_200801",
+  "random_state": 42,
+  "method": "RepeatedStratifiedKFold",
+  "n_splits": 5,
+  "n_repeats": 5,
+  "folds_per_model": 25,
+  "total_experiments": 24,
+  "total_model_fits": 600,
+  "scoring_metrics": [
+    "roc_auc",
+    "accuracy",
+    "precision",
+    "recall",
+    "f1"
+  ],
+  "best_by_mean_roc_auc": {
+    "diabetes": {
+      "model": "logistic_regression",
+      "mean_roc_auc": 0.8360751921733054,
+      "std_roc_auc": 0.030917095651886117
+    },
+    "heart": {
+      "model": "random_forest",
+      "mean_roc_auc": 0.9071073082010582,
+      "std_roc_auc": 0.03812007411508273
+    },
+    "ckd": {
+      "model": "svm",
+      "mean_roc_auc": 1.0,
+      "std_roc_auc": 0.0
+    },
+    "breast_cancer": {
+      "model": "svm",
+      "mean_roc_auc": 0.9950948802201667,
+      "std_roc_auc": 0.004551708628420454
+    }
+  },
+  "outputs": {
+    "fold_results": "reports\\repeated_cv\\20261101_200801\\repeated_cv_fold_results.csv",
+    "summary": "reports\\repeated_cv\\20261101_200801\\repeated_cv_summary.csv",
+    "roc_auc_plot": "reports\\repeated_cv\\20261101_200801\\repeated_cv_roc_auc_comparison.png"
+  },
+  "note": "Cross-validation results are internal validation estimates, not independent external clinical validation."
+}

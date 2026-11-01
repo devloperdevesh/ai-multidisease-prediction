@@ -1,0 +1,201 @@
+{
+  "project": "ai-multidisease-prediction",
+  "created_at": "20261101_201432",
+  "checks": {
+    "repeated_cross_validation": {
+      "passed": true,
+      "configurations": 24,
+      "fold_evaluations": 600,
+      "folds_per_configuration": 25,
+      "source_directory": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\repeated_cv\\20261101_200801",
+      "metadata": {
+        "created_at": "20261101_200801",
+        "random_state": 42,
+        "method": "RepeatedStratifiedKFold",
+        "n_splits": 5,
+        "n_repeats": 5,
+        "folds_per_model": 25,
+        "total_experiments": 24,
+        "total_model_fits": 600,
+        "scoring_metrics": [
+          "roc_auc",
+          "accuracy",
+          "precision",
+          "recall",
+          "f1"
+        ],
+        "best_by_mean_roc_auc": {
+          "diabetes": {
+            "model": "logistic_regression",
+            "mean_roc_auc": 0.8360751921733054,
+            "std_roc_auc": 0.030917095651886117
+          },
+          "heart": {
+            "model": "random_forest",
+            "mean_roc_auc": 0.9071073082010582,
+            "std_roc_auc": 0.03812007411508273
+          },
+          "ckd": {
+            "model": "svm",
+            "mean_roc_auc": 1.0,
+            "std_roc_auc": 0.0
+          },
+          "breast_cancer": {
+            "model": "svm",
+            "mean_roc_auc": 0.9950948802201667,
+            "std_roc_auc": 0.004551708628420454
+          }
+        },
+        "outputs": {
+          "fold_results": "reports\\repeated_cv\\20261101_200801\\repeated_cv_fold_results.csv",
+          "summary": "reports\\repeated_cv\\20261101_200801\\repeated_cv_summary.csv",
+          "roc_auc_plot": "reports\\repeated_cv\\20261101_200801\\repeated_cv_roc_auc_comparison.png"
+        },
+        "note": "Cross-validation results are internal validation estimates, not independent external clinical validation."
+      }
+    },
+    "research_validation": {
+      "passed": true,
+      "directory": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\research_validation\\20261101_200213",
+      "files": {
+        "roc_curves_all_24_experiments.png": true,
+        "confusion_matrices_all_24_experiments.png": true,
+        "all_24_experiment_metrics.csv": true,
+        "research_validation_audit.json": true
+      }
+    },
+    "existing_training_evidence": {
+      "passed": true,
+      "required_result_files": {
+        "best_models.json": true,
+        "model_comparison.csv": true,
+        "model_training_results.json": true
+      },
+      "joblib_model_count": 24,
+      "models_directory_exists": true
+    },
+    "pytest": {
+      "return_code": 0,
+      "passed": true,
+      "stdout": ".........................................                                [100%]\n41 passed in 3.68s\n",
+      "stderr": ""
+    },
+    "frontend_build": {
+      "passed": true,
+      "packages_found": 1,
+      "build_results": [
+        {
+          "package_json": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\frontend\\package.json",
+          "working_directory": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\frontend",
+          "package_name": "frontend",
+          "build_script": "vite build",
+          "return_code": 0,
+          "passed": true,
+          "dist_index_exists": true,
+          "stdout": "\n> frontend@0.0.0 build\n> vite build\n\n\u001b[36mvite v8.3.5 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u00e2\u0153\u201c 2053 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.68 kB \u00e2\u201d\u201a gzip:  0.40 kB\ndist/assets/index-BE6md8KW.css   51.94 kB \u00e2\u201d\u201a gzip: 11.44 kB\ndist/assets/index-LMfLAQb9.js   283.45 kB \u00e2\u201d\u201a gzip: 86.39 kB\n\n\u001b[32m\u00e2\u0153\u201c built in 405ms\u001b[39m\n",
+          "stderr": ""
+        }
+      ],
+      "note": "Only the active frontend is a critical production build target. Backup snapshots are excluded."
+    },
+    "dataset_loading": {
+      "passed": true,
+      "datasets_loaded": 4
+    }
+  },
+  "informational_audits": {
+    "datasets": {
+      "diabetes": {
+        "rows": 768,
+        "features": 8,
+        "class_counts": {
+          "0": 500,
+          "1": 268
+        },
+        "majority_minority_ratio": 1.8656716417910448
+      },
+      "heart": {
+        "rows": 303,
+        "features": 13,
+        "class_counts": {
+          "0": 164,
+          "1": 139
+        },
+        "majority_minority_ratio": 1.1798561151079137
+      },
+      "ckd": {
+        "rows": 400,
+        "features": 24,
+        "class_counts": {
+          "0": 150,
+          "1": 250
+        },
+        "majority_minority_ratio": 1.6666666666666667
+      },
+      "breast_cancer": {
+        "rows": 569,
+        "features": 30,
+        "class_counts": {
+          "0": 357,
+          "1": 212
+        },
+        "majority_minority_ratio": 1.6839622641509433
+      }
+    },
+    "ckd": {
+      "rows": 400,
+      "features": 24,
+      "missing_cells": 1012,
+      "duplicate_feature_rows": 0,
+      "numeric_feature_target_correlations": {
+        "hemo": -0.7689192107584923,
+        "pcv": -0.7414273352266597,
+        "sg": -0.7321634658096832,
+        "rbcc": -0.6990887828938342,
+        "al": 0.6270896824611513,
+        "bgr": 0.41967217104127724,
+        "bu": 0.38060456885948113,
+        "sod": -0.3756735385494124,
+        "su": 0.34406986270600004,
+        "sc": 0.2999694247524009,
+        "bp": 0.29407672078228986,
+        "wbcc": 0.2319194507261392,
+        "age": 0.2272675462597023,
+        "pot": 0.0845411725113595
+      },
+      "interpretation": "Screening diagnostics only. They do not prove data leakage is present or absent."
+    },
+    "class_imbalance": {
+      "status": "DOCUMENTED",
+      "note": "Stratification preserves class proportions in splits; it does not itself correct class imbalance."
+    }
+  },
+  "warnings": [
+    "CKD near-perfect scores require source-level feature provenance review.",
+    "Repeated cross-validation is internal validation, not external clinical validation.",
+    "No clinical validity or diagnostic safety claim is established.",
+    "Class imbalance is documented but not automatically corrected.",
+    "An independent external dataset is needed for stronger generalization evidence."
+  ],
+  "outputs": {
+    "repeated_cv_directory": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\repeated_cv\\20261101_200801",
+    "research_validation_directory": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\research_validation\\20261101_200213",
+    "final_audit_directory": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\reports\\final_research_audit\\20261101_201432"
+  },
+  "critical_checks": {
+    "repeated_cross_validation": true,
+    "research_validation": true,
+    "existing_training_evidence": true,
+    "pytest": true,
+    "frontend_build": true,
+    "dataset_loading": true
+  },
+  "critical_check_count": 6,
+  "critical_check_total": 6,
+  "overall_technical_status": "PASS",
+  "final_correction": {
+    "created_at": "2026-11-01T20:16:08",
+    "active_frontend_only": true,
+    "backup_frontends_excluded": true
+  }
+}

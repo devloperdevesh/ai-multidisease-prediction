@@ -1,0 +1,54 @@
+[
+  {
+    "disease": "diabetes",
+    "dataset": "Pima Indians Diabetes Dataset",
+    "source_row_index": 44,
+    "actual_label": 0,
+    "actual_label_meaning": "Negative class",
+    "predicted_label": 1,
+    "prediction_correct": false,
+    "model": "logistic_regression",
+    "positive_class_probability": 0.6097,
+    "positive_class_probability_percent": 60.97,
+    "test_status": "PASS"
+  },
+  {
+    "disease": "heart",
+    "dataset": "UCI Cleveland Heart Disease Dataset",
+    "source_row_index": 219,
+    "actual_label": 0,
+    "actual_label_meaning": "Negative class",
+    "predicted_label": 0,
+    "prediction_correct": true,
+    "model": "logistic_regression",
+    "positive_class_probability": 0.217746,
+    "positive_class_probability_percent": 21.77,
+    "test_status": "PASS"
+  },
+  {
+    "disease": "ckd",
+    "dataset": "UCI Chronic Kidney Disease Dataset",
+    "source_row_index": 342,
+    "actual_label": 0,
+    "actual_label_meaning": "Negative class",
+    "predicted_label": 0,
+    "prediction_correct": true,
+    "model": "logistic_regression",
+    "positive_class_probability": 0.003303,
+    "positive_class_probability_percent": 0.33,
+    "test_status": "PASS"
+  },
+  {
+    "disease": "breast_cancer",
+    "dataset": "Wisconsin Diagnostic Breast Cancer (WDBC)",
+    "source_row_index": 120,
+    "actual_label": 0,
+    "actual_label_meaning": "Negative class",
+    "predicted_label": 0,
+    "prediction_correct": true,
+    "model": "logistic_regression",
+    "positive_class_probability": 0.000365,
+    "positive_class_probability_percent": 0.04,
+    "test_status": "PASS"
+  }
+]

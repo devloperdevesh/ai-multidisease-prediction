@@ -1,4 +1,4 @@
-﻿const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api";
 
 async function request(path, options = {}) {
   const response = await fetch(`${API_BASE_URL}${path}`, {
@@ -40,5 +40,27 @@ export async function predictDisease(disease, features) {
   return request(`/predict/${disease}`, {
     method: "POST",
     body: JSON.stringify(features),
+  });
+}
+
+
+export async function getMetrics() {
+  return request("/metrics");
+}
+
+export async function getReports() {
+  return request("/reports");
+}
+
+export async function createReport(report) {
+  return request("/reports", {
+    method: "POST",
+    body: JSON.stringify(report),
+  });
+}
+
+export async function deleteReport(id) {
+  return request(`/reports/${encodeURIComponent(id)}`, {
+    method: "DELETE",
   });
 }

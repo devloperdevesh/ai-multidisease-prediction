@@ -6,7 +6,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.0084,
+    "training_seconds": 0.0085,
     "cv_roc_auc_mean": 0.8433637873754153,
     "cv_roc_auc_std": 0.018549552071526722,
     "test_metrics": {
@@ -20,7 +20,7 @@
       "false_negative": 27,
       "true_positive": 27
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\logistic_regression.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\logistic_regression.joblib",
     "target": "Outcome"
   },
   {
@@ -30,7 +30,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.012,
+    "training_seconds": 0.0075,
     "cv_roc_auc_mean": 0.6510063676633444,
     "cv_roc_auc_std": 0.014780431693809631,
     "test_metrics": {
@@ -44,7 +44,7 @@
       "false_negative": 28,
       "true_positive": 26
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\decision_tree.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\decision_tree.joblib",
     "target": "Outcome"
   },
   {
@@ -54,7 +54,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.3458,
+    "training_seconds": 0.4635,
     "cv_roc_auc_mean": 0.8209482281284608,
     "cv_roc_auc_std": 0.020899950976638763,
     "test_metrics": {
@@ -68,7 +68,7 @@
       "false_negative": 25,
       "true_positive": 29
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\random_forest.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\random_forest.joblib",
     "target": "Outcome"
   },
   {
@@ -78,7 +78,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.0736,
+    "training_seconds": 0.0437,
     "cv_roc_auc_mean": 0.8333084163898116,
     "cv_roc_auc_std": 0.022803458956872403,
     "test_metrics": {
@@ -92,7 +92,7 @@
       "false_negative": 24,
       "true_positive": 30
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\svm.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\svm.joblib",
     "target": "Outcome"
   },
   {
@@ -102,7 +102,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.0092,
+    "training_seconds": 0.006,
     "cv_roc_auc_mean": 0.7843320874861572,
     "cv_roc_auc_std": 0.03728143263534694,
     "test_metrics": {
@@ -116,7 +116,7 @@
       "false_negative": 21,
       "true_positive": 33
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\knn.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\knn.joblib",
     "target": "Outcome"
   },
   {
@@ -126,7 +126,7 @@
     "feature_count": 8,
     "train_rows": 614,
     "test_rows": 154,
-    "training_seconds": 0.651,
+    "training_seconds": 0.218,
     "cv_roc_auc_mean": 0.7981063122923587,
     "cv_roc_auc_std": 0.01915336417594889,
     "test_metrics": {
@@ -140,7 +140,7 @@
       "false_negative": 22,
       "true_positive": 32
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\xgboost.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\diabetes\\xgboost.joblib",
     "target": "Outcome"
   },
   {
@@ -150,7 +150,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.0088,
+    "training_seconds": 0.0086,
     "cv_roc_auc_mean": 0.8959708568404221,
     "cv_roc_auc_std": 0.014838298262640983,
     "test_metrics": {
@@ -164,7 +164,7 @@
       "false_negative": 2,
       "true_positive": 26
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\heart\\logistic_regression.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\heart\\logistic_regression.joblib",
     "target": "num"
   },
   {
@@ -174,7 +174,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.0054,
+    "training_seconds": 0.01,
     "cv_roc_auc_mean": 0.6966532662184836,
     "cv_roc_auc_std": 0.02170211881952363,
     "test_metrics": {
@@ -188,7 +188,7 @@
       "false_negative": 5,
       "true_positive": 23
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\heart\\decision_tree.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\heart\\decision_tree.joblib",
     "target": "num"
   },
   {
@@ -198,7 +198,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.3487,
+    "training_seconds": 0.4963,
     "cv_roc_auc_mean": 0.8834726867335563,
     "cv_roc_auc_std": 0.03601501523618127,
     "test_metrics": {
@@ -212,7 +212,7 @@
       "false_negative": 1,
       "true_positive": 27
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\heart\\random_forest.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\heart\\random_forest.joblib",
     "target": "num"
   },
   {
@@ -222,7 +222,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.0104,
+    "training_seconds": 0.0124,
     "cv_roc_auc_mean": 0.8831689244732722,
     "cv_roc_auc_std": 0.024382972208831212,
     "test_metrics": {
@@ -236,7 +236,7 @@
       "false_negative": 3,
       "true_positive": 25
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\heart\\svm.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\heart\\svm.joblib",
     "target": "num"
   },
   {
@@ -246,7 +246,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.0056,
+    "training_seconds": 0.0078,
     "cv_roc_auc_mean": 0.8824076889294281,
     "cv_roc_auc_std": 0.030469864730545793,
     "test_metrics": {
@@ -260,7 +260,7 @@
       "false_negative": 0,
       "true_positive": 28
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\heart\\knn.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\heart\\knn.joblib",
     "target": "num"
   },
   {
@@ -270,7 +270,7 @@
     "feature_count": 13,
     "train_rows": 242,
     "test_rows": 61,
-    "training_seconds": 0.324,
+    "training_seconds": 0.1414,
     "cv_roc_auc_mean": 0.8637771246466899,
     "cv_roc_auc_std": 0.015777732605258783,
     "test_metrics": {
@@ -284,7 +284,7 @@
       "false_negative": 2,
       "true_positive": 26
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\heart\\xgboost.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\heart\\xgboost.joblib",
     "target": "num"
   },
   {
@@ -294,7 +294,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.0313,
+    "training_seconds": 0.0198,
     "cv_roc_auc_mean": 1.0,
     "cv_roc_auc_std": 0.0,
     "test_metrics": {
@@ -308,7 +308,7 @@
       "false_negative": 1,
       "true_positive": 49
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\ckd\\logistic_regression.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\ckd\\logistic_regression.joblib",
     "target": "class"
   },
   {
@@ -318,7 +318,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.0286,
+    "training_seconds": 0.0191,
     "cv_roc_auc_mean": 0.9666666666666666,
     "cv_roc_auc_std": 0.016457014715109592,
     "test_metrics": {
@@ -332,7 +332,7 @@
       "false_negative": 2,
       "true_positive": 48
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\ckd\\decision_tree.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\ckd\\decision_tree.joblib",
     "target": "class"
   },
   {
@@ -342,7 +342,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.3387,
+    "training_seconds": 0.4593,
     "cv_roc_auc_mean": 0.9994791666666668,
     "cv_roc_auc_std": 0.0006588078458683749,
     "test_metrics": {
@@ -356,7 +356,7 @@
       "false_negative": 0,
       "true_positive": 50
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\ckd\\random_forest.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\ckd\\random_forest.joblib",
     "target": "class"
   },
   {
@@ -366,7 +366,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.1156,
+    "training_seconds": 0.0202,
     "cv_roc_auc_mean": 1.0,
     "cv_roc_auc_std": 0.0,
     "test_metrics": {
@@ -380,7 +380,7 @@
       "false_negative": 2,
       "true_positive": 48
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\ckd\\svm.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\ckd\\svm.joblib",
     "target": "class"
   },
   {
@@ -390,7 +390,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.012,
+    "training_seconds": 0.0116,
     "cv_roc_auc_mean": 0.9917708333333332,
     "cv_roc_auc_std": 0.005253966755382654,
     "test_metrics": {
@@ -404,7 +404,7 @@
       "false_negative": 3,
       "true_positive": 47
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\ckd\\knn.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\ckd\\knn.joblib",
     "target": "class"
   },
   {
@@ -414,7 +414,7 @@
     "feature_count": 24,
     "train_rows": 320,
     "test_rows": 80,
-    "training_seconds": 0.1214,
+    "training_seconds": 0.1158,
     "cv_roc_auc_mean": 0.9983333333333334,
     "cv_roc_auc_std": 0.0015590239111558035,
     "test_metrics": {
@@ -428,7 +428,7 @@
       "false_negative": 0,
       "true_positive": 50
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\ckd\\xgboost.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\ckd\\xgboost.joblib",
     "target": "class"
   },
   {
@@ -452,7 +452,7 @@
       "false_negative": 3,
       "true_positive": 39
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\logistic_regression.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\logistic_regression.joblib",
     "target": "Diagnosis"
   },
   {
@@ -462,7 +462,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.0112,
+    "training_seconds": 0.0143,
     "cv_roc_auc_mean": 0.9172342621259031,
     "cv_roc_auc_std": 0.0375421661005599,
     "test_metrics": {
@@ -476,7 +476,7 @@
       "false_negative": 4,
       "true_positive": 38
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\decision_tree.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\decision_tree.joblib",
     "target": "Diagnosis"
   },
   {
@@ -486,7 +486,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.3357,
+    "training_seconds": 0.3937,
     "cv_roc_auc_mean": 0.9879772961816305,
     "cv_roc_auc_std": 0.007281943183619418,
     "test_metrics": {
@@ -500,7 +500,7 @@
       "false_negative": 3,
       "true_positive": 39
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\random_forest.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\random_forest.joblib",
     "target": "Diagnosis"
   },
   {
@@ -510,7 +510,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.0287,
+    "training_seconds": 0.0426,
     "cv_roc_auc_mean": 0.9949432404540763,
     "cv_roc_auc_std": 0.00496429864635942,
     "test_metrics": {
@@ -524,7 +524,7 @@
       "false_negative": 3,
       "true_positive": 39
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\svm.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\svm.joblib",
     "target": "Diagnosis"
   },
   {
@@ -534,7 +534,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.0051,
+    "training_seconds": 0.012,
     "cv_roc_auc_mean": 0.9871001031991744,
     "cv_roc_auc_std": 0.013581575955716877,
     "test_metrics": {
@@ -548,7 +548,7 @@
       "false_negative": 4,
       "true_positive": 38
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\knn.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\knn.joblib",
     "target": "Diagnosis"
   },
   {
@@ -558,7 +558,7 @@
     "feature_count": 30,
     "train_rows": 455,
     "test_rows": 114,
-    "training_seconds": 0.2328,
+    "training_seconds": 0.4493,
     "cv_roc_auc_mean": 0.9927760577915377,
     "cv_roc_auc_std": 0.0050133984732677024,
     "test_metrics": {
@@ -572,7 +572,7 @@
       "false_negative": 4,
       "true_positive": 38
     },
-    "model_path": "C:\\Users\\OS\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\xgboost.joblib",
+    "model_path": "C:\\Users\\OS\\OneDrive\\Music\\Desktop\\ai-multidisease-prediction\\models\\breast_cancer\\xgboost.joblib",
     "target": "Diagnosis"
   }
 ]

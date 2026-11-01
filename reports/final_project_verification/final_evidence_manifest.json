@@ -1,0 +1,61 @@
+{
+  "verified_at": "2026-11-01T20:20:48",
+  "technical_audit_status": "PASS",
+  "technical_audit_file": "reports\\final_research_audit\\20261101_201432\\final_research_audit.json",
+  "critical_checks": {
+    "repeated_cross_validation": true,
+    "research_validation": true,
+    "existing_training_evidence": true,
+    "pytest": true,
+    "frontend_build": true,
+    "dataset_loading": true
+  },
+  "evidence_categories_found": 11,
+  "evidence_categories_expected": 11,
+  "evidence_locations": {
+    "Final audit Markdown": [
+      "reports\\final_research_audit\\20261101_201225\\FINAL_RESEARCH_AUDIT.md",
+      "reports\\final_research_audit\\20261101_201432\\FINAL_RESEARCH_AUDIT.md"
+    ],
+    "Repeated CV fold results": [
+      "reports\\repeated_cv\\20261101_200801\\repeated_cv_fold_results.csv"
+    ],
+    "Repeated CV summary": [
+      "reports\\repeated_cv\\20261101_200801\\repeated_cv_summary.csv"
+    ],
+    "Repeated CV comparison graph": [
+      "reports\\repeated_cv\\20261101_200801\\repeated_cv_roc_auc_comparison.png"
+    ],
+    "Research experiment metrics": [
+      "reports\\research_validation\\20261101_200213\\all_24_experiment_metrics.csv"
+    ],
+    "Research ROC curves": [
+      "reports\\research_validation\\20261101_200213\\roc_curves_all_24_experiments.png"
+    ],
+    "Research confusion matrices": [
+      "reports\\research_validation\\20261101_200213\\confusion_matrices_all_24_experiments.png"
+    ],
+    "Four prediction tests": [
+      "reports\\results\\four_real_prediction_tests.csv",
+      "reports\\results\\four_real_prediction_tests.json"
+    ],
+    "Model comparison": [
+      "reports\\results\\model_comparison.csv"
+    ],
+    "Dataset audit": [
+      "reports\\results\\dataset_audit.json",
+      "reports\\results\\dataset_audit.md"
+    ],
+    "Best models": [
+      "reports\\results\\best_models.json"
+    ]
+  },
+  "unlocated_categories": [],
+  "trained_model_count": 24,
+  "trained_model_inventory_pass": true,
+  "limitations": [
+    "Technical checks do not establish clinical validity.",
+    "CKD near-perfect results require feature and label provenance review.",
+    "Independent external validation is still needed."
+  ]
+}

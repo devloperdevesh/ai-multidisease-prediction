@@ -1,0 +1,5 @@
+disease,dataset,source_row_index,actual_label,actual_label_meaning,predicted_label,prediction_correct,model,positive_class_probability,positive_class_probability_percent,test_status
+diabetes,Pima Indians Diabetes Dataset,44,0,Negative class,1,False,logistic_regression,0.6097,60.97,PASS
+heart,UCI Cleveland Heart Disease Dataset,219,0,Negative class,0,True,logistic_regression,0.217746,21.77,PASS
+ckd,UCI Chronic Kidney Disease Dataset,342,0,Negative class,0,True,logistic_regression,0.003303,0.33,PASS
+breast_cancer,Wisconsin Diagnostic Breast Cancer (WDBC),120,0,Negative class,0,True,logistic_regression,0.000365,0.04,PASS

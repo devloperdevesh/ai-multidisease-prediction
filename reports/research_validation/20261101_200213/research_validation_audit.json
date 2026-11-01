@@ -1,0 +1,130 @@
+{
+  "created_at": "20261101_200213",
+  "random_state": 42,
+  "split": "80:20 using project split function",
+  "experiment_count": 24,
+  "datasets": {
+    "diabetes": {
+      "rows": 768,
+      "features": 8,
+      "class_counts": {
+        "0": 500,
+        "1": 268
+      },
+      "class_percentages": {
+        "0": 65.1042,
+        "1": 34.8958
+      },
+      "majority_minority_ratio": 1.8656716417910448,
+      "missing_feature_cells": 652,
+      "missing_by_feature": {
+        "Glucose": 5,
+        "BloodPressure": 35,
+        "SkinThickness": 227,
+        "Insulin": 374,
+        "BMI": 11
+      }
+    },
+    "heart": {
+      "rows": 303,
+      "features": 13,
+      "class_counts": {
+        "0": 164,
+        "1": 139
+      },
+      "class_percentages": {
+        "0": 54.1254,
+        "1": 45.8746
+      },
+      "majority_minority_ratio": 1.1798561151079137,
+      "missing_feature_cells": 6,
+      "missing_by_feature": {
+        "ca": 4,
+        "thal": 2
+      }
+    },
+    "ckd": {
+      "rows": 400,
+      "features": 24,
+      "class_counts": {
+        "0": 150,
+        "1": 250
+      },
+      "class_percentages": {
+        "0": 37.5,
+        "1": 62.5
+      },
+      "majority_minority_ratio": 1.6666666666666667,
+      "missing_feature_cells": 1012,
+      "missing_by_feature": {
+        "age": 9,
+        "bp": 12,
+        "sg": 47,
+        "al": 46,
+        "su": 49,
+        "rbc": 152,
+        "pc": 65,
+        "pcc": 4,
+        "ba": 4,
+        "bgr": 44,
+        "bu": 19,
+        "sc": 17,
+        "sod": 87,
+        "pot": 88,
+        "hemo": 52,
+        "pcv": 71,
+        "wbcc": 106,
+        "rbcc": 131,
+        "htn": 2,
+        "dm": 2,
+        "cad": 2,
+        "appet": 1,
+        "pe": 1,
+        "ane": 1
+      }
+    },
+    "breast_cancer": {
+      "rows": 569,
+      "features": 30,
+      "class_counts": {
+        "0": 357,
+        "1": 212
+      },
+      "class_percentages": {
+        "0": 62.7417,
+        "1": 37.2583
+      },
+      "majority_minority_ratio": 1.6839622641509433,
+      "missing_feature_cells": 0,
+      "missing_by_feature": {}
+    }
+  },
+  "ckd_diagnostics": {
+    "duplicate_feature_rows": 0,
+    "conflicting_duplicate_feature_groups": 0,
+    "absolute_numeric_feature_target_correlations": {
+      "hemo": 0.7689192107584923,
+      "pcv": 0.7414273352266612,
+      "sg": 0.7321634658097287,
+      "rbcc": 0.6990887828938335,
+      "al": 0.6270896824611518,
+      "bgr": 0.41967217104127763,
+      "bu": 0.38060456885948113,
+      "sod": 0.3756735385494112,
+      "su": 0.3440698627060004,
+      "sc": 0.29996942475240085,
+      "bp": 0.2940767207822905,
+      "wbcc": 0.23191945072613954,
+      "age": 0.22726754625970286,
+      "pot": 0.08454117251135991
+    },
+    "shuffled_training_label_roc_auc": 0.43333333333333335,
+    "interpretation": "Diagnostic only; does not establish absence of data leakage."
+  },
+  "class_balancing": "This audit measures class proportions; it does not apply SMOTE, oversampling, undersampling, or class weighting.",
+  "outputs": {
+    "roc_plot": "reports\\research_validation\\20261101_200213\\roc_curves_all_24_experiments.png",
+    "confusion_matrix_plot": "reports\\research_validation\\20261101_200213\\confusion_matrices_all_24_experiments.png",
+    "metrics_csv": "reports\\research_validation\\20261101_200213\\all_24_experiment_metrics.csv"
+  }
+}
