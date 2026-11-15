@@ -328,3 +328,18 @@ Released under the [MIT License](LICENSE).
 [Live Demo](https://medipredict-ai-two.vercel.app/) · [GitHub](https://github.com/devloperdevesh/ai-multidisease-prediction)
 
 </div>
+
+## Academic and technical documentation
+
+| Document | Contents |
+|---|---|
+| [Final Year Project Report](docs/PROJECT_REPORT.md) | Introduction, SDG alignment, literature survey, research gap, objectives, methodology, implementation, results, conclusion and references |
+| [Implementation Status](docs/IMPLEMENTATION_STATUS.md) | Verified evidence, architecture and claims requiring further validation |
+| [High-Level Design](docs/02_hld.md) | System architecture |
+| [Low-Level Design](docs/03_lld.md) | Component-level design |
+| [Dataset Documentation](docs/04_dataset_documentation.md) | Dataset information |
+| [Preprocessing Methodology](docs/05_preprocessing_methodology.md) | Data preparation |
+| [Literature Survey](docs/01_literature_survey.md) | Related work |
+| [Test Cases](docs/06_test_cases.md) | Test documentation |
+| [Model Evaluation Evidence](docs/MODEL_EVALUATION_EVIDENCE.md) | All 24 model experiments and evaluation records |
+| [Screenshots Index](docs/SCREENSHOTS.md) | Application screenshots |

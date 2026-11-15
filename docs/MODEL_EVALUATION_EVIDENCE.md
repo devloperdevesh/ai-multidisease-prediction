@@ -8,7 +8,7 @@ This section is generated directly from the experiment result files in `reports/
 
 ## 1. Complete 24-Experiment Model Comparison
 
-Source: `reports/results/model_comparison.csv`  
+Source: `reports/results/model_comparison.csv`
 Rows in source file: **24**
 
 | disease | model | dataset_rows | feature_count | train_rows | test_rows | training_seconds | cv_roc_auc_mean | cv_roc_auc_std | accuracy | precision | recall | f1 | roc_auc | true_negative | false_positive | false_negative | true_positive | model_path |
@@ -48,7 +48,7 @@ Rows in source file: **24**
 | heart | 6 |
 ## 2. Cross-Validation Results
 
-Source: `reports/results/repeated_cv_audit.csv`  
+Source: `reports/results/repeated_cv_audit.csv`
 Rows in source file: **4**
 
 | disease | rows | features | accuracy_mean | accuracy_std | precision_mean | precision_std | recall_mean | recall_std | f1_mean | f1_std | roc_auc_mean | roc_auc_std |
@@ -1249,4 +1249,3 @@ Source rows: **4**
   }
 ]
 ```
-
